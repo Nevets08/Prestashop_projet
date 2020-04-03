@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2020-03-26 14:52:30
+/* Smarty version 3.1.33, created on 2020-03-30 15:59:20
   from 'C:\Users\steven\Documents\Prestashop_projet\themes\classic\templates\catalog\_partials\variant-links.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5e7cb39e68c931_11101859',
+  'unifunc' => 'content_5e81fb389bd041_99352582',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5e7cb39e68c931_11101859 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '8516573325e7cb39e6662d0_03796438';
+function content_5e81fb389bd041_99352582 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '14690214355e81fb38980950_84090616';
 ?>
 <div class="variant-links">
   <?php

@@ -6,11 +6,27 @@
     <language>fr</language>
      <atom:link href="https://www.prestashop.com/fr/blog/feed.xml" rel="self" type="application/rss+xml" />
       <item>
+    <title>Confinement : nos conseils pour bien télétravailler</title>
+    <link>https://www.prestashop.com/fr/blog/confinement-conseils-teletravail</link>
+    <description>Une des conséquences de la crise sanitaire que nous traversons, est l’obligation pour bon nombre de professionnels de travailler depuis leur domicile. </description>
+     <pubDate>Fri, 27 Mar 2020 10:58:02 +0100</pubDate>
+ <dc:creator>Aurélien Bellanger</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/fr/blog/confinement-conseils-teletravail</guid>
+  </item>
+  <item>
+    <title>Crise sanitaire du COVID-19, ce que les e-commerçants français doivent savoir</title>
+    <link>https://www.prestashop.com/fr/blog/coronavirus-e-commercants-ressources</link>
+    <description>Durant cette crise sanitaire, d’énormes quantités d’informations circulent et il est donc parfois difficile de s’y retrouver.</description>
+     <pubDate>Thu, 26 Mar 2020 16:00:51 +0100</pubDate>
+ <dc:creator>L&#039;équipe PrestaShop</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/fr/blog/coronavirus-e-commercants-ressources</guid>
+  </item>
+  <item>
     <title>COVID-19 : conseils pratiques aux e-commerçants</title>
     <link>https://www.prestashop.com/fr/blog/coronavirus-conseils-pratiques</link>
     <description>Alors que les conséquences liées à la situation sanitaire évoluent au jour le jour et restent à définir, le confinement dans c</description>
      <pubDate>Fri, 20 Mar 2020 12:21:11 +0100</pubDate>
- <dc:creator>L&#039;équipe PrestaShop</dc:creator>
+ <dc:creator>Aurélien Bellanger</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/fr/blog/coronavirus-conseils-pratiques</guid>
   </item>
   <item>
@@ -68,22 +84,6 @@
      <pubDate>Mon, 02 Mar 2020 10:39:36 +0100</pubDate>
  <dc:creator>L&#039;équipe PrestaShop</dc:creator>
  <guid isPermaLink="false">https://www.prestashop.com/fr/blog/nouveautes-prestashop-2020</guid>
-  </item>
-  <item>
-    <title>Réussir sa migration de boutique PrestaShop</title>
-    <link>https://www.prestashop.com/fr/blog/reussir-migration-boutique-prestashop</link>
-    <description>Afin d&#039;optimiser son fonctionnement et bénéficier des dernières technologies digitales, PrestaShop apporte régulièrement des mises à jour à sa plateforme.</description>
-     <pubDate>Thu, 27 Feb 2020 17:50:30 +0100</pubDate>
- <dc:creator>Nathanaël Jaskowiak</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/fr/blog/reussir-migration-boutique-prestashop</guid>
-  </item>
-  <item>
-    <title>Cinq aspects juridiques à considérer pour votre projet e-commerce en 2020</title>
-    <link>https://www.prestashop.com/fr/blog/aspects-juridiques-projet-e-commerce-2020</link>
-    <description>Vous envisagez de lancer votre projet e-commerce avec PrestaShop ?</description>
-     <pubDate>Mon, 24 Feb 2020 12:17:16 +0100</pubDate>
- <dc:creator>guillaumerobez</dc:creator>
- <guid isPermaLink="false">https://www.prestashop.com/fr/blog/aspects-juridiques-projet-e-commerce-2020</guid>
   </item>
   </channel>
 </rss>

@@ -38,6 +38,8 @@ class MultiStores extends Module {
         
         // On se greffe sur un ou plusieurs hooks
         if (!parent::install()
+            &&
+            !$this->installCarrier()
 /*            || !$this->registerHook('displayFooterProduct')
             || !$this->registerHook('displayProductActions')
             || !$this->registerHook('displayLeftColumn')
@@ -66,6 +68,35 @@ class MultiStores extends Module {
             return false;
         }
         return true;
+    }
+
+    public function installCarrier()
+    {
+        $carrier = new Carrier();
+        $carrier->name = 'Retrait magasin';
+
+        $enregistrementEnDb = $carrier->save();
+        // stocker l'id du carrier dans la base de configuration
+
+        Configuration::updateValue('MULTISTORE_ID_CARRIER', /** id du carrier */);
+
+        // si l'enregistrement en DB est ok
+        // retrourner true
+        
+        //sinon retourner false
+        
+
+    }
+
+    public function uninstallCarrier()
+    {
+        $carrier = new Carrier(/** recupérer l'id du carrier en DB */);
+
+        $carrier->delete();
+
+        // retourner true si la suppression est OK
+
+        // false sinon
     }
 
 }

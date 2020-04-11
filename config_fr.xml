@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>multistores</name>
+    <displayName><![CDATA[Multi Stores]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Desciption a faire en anglais]]></description>
+    <author><![CDATA[Steven ROBERT]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+	<confirmUninstall><![CDATA[Are you sure ?]]></confirmUninstall>
+    <is_configurable>0</is_configurable>
+    <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

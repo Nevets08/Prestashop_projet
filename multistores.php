@@ -1,6 +1,5 @@
 <?php
 
-// sécurité de base
 if (!defined('_PS_VERSION_')){
     exit;
 }
@@ -23,6 +22,7 @@ class MultiStores extends Module {
         // Description du module
         $this->description = $this->l('Desciption a faire en anglais');
         // Compatibilité de votre module
+        $this->description = $this->l('Optimize your stores with this module');
         $this->ps_versions_compliancy =['min' => '1.6', 'max' => _PS_VERSION_];
         // Confirmation de la suppression
         $this->confirmUninstall = $this->l('Are you sure ?');
@@ -34,16 +34,16 @@ class MultiStores extends Module {
         parent::__construct();
     }
 
-    public function install() {
-        
-        // On se greffe sur un ou plusieurs hooks
+    public function install()
+    {
         if (!parent::install()
-            &&
-            !$this->installCarrier()
-/*            || !$this->registerHook('displayFooterProduct')
-            || !$this->registerHook('displayProductActions')
-            || !$this->registerHook('displayLeftColumn')
+            || !$this->_newCarrier()
+            || !$this->_installTab('AdminParentOrder', 'AdminPickupOrderController', $this->l('Pickup Order'))
+            || !$this->registerHook('displayOrderConfirm')
             || !$this->registerHook('displayHeader')
+            || !$this->registerHook('displayCarrier')
+            || !$this->_installSql()
+        ) return false;
 
             // On installe le menu
             || !$this->_installTab(0,'AdminFirstModule', $this->l('My First Module'))
@@ -96,6 +96,6 @@ class MultiStores extends Module {
         // retourner true si la suppression est OK
 
         // false sinon
+    
     }
-
 }

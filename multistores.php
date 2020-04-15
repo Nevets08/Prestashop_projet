@@ -26,7 +26,7 @@ class MultiStores extends Module {
     {
         if (!parent::install()
             || !$this->_newCarrier()
-            || !$this->_installTab('AdminParentOrder', '// CONTROLLER A METTRE', $this->l('Pickup Order'))
+            || !$this->_installTab('AdminParentOrder', 'AdminPickupController', $this->l('Pickup Order'))
             || !$this->registerHook('displayOrder')
             || !$this->registerHook('displayCarrier')
             || !$this->_installSql()
@@ -39,7 +39,7 @@ class MultiStores extends Module {
     {
         if (!parent::uninstall()
             || !$this->_deleteCarrier()
-            || !$this->_uninstallTab('// CONTROLLER A METTRE')
+            || !$this->_uninstallTab('AdminPickupController')
             || !Configuration::deleteByName('MULTISTORE_CARRIER_ID')
             || !$this->_uninstallSql()
         ) {
@@ -127,7 +127,7 @@ class MultiStores extends Module {
         ];
 
         $js = [
-            $this->_path . 'views/js/ // NOM FICHIER.js',
+            $this->_path . 'views/js/front_check.js',
         ];
 
         $this->context->controller->addCSS($css);
@@ -195,7 +195,7 @@ class MultiStores extends Module {
         $order = new Order($params['id_order']);
 
         $sql = new DbQuery();
-        $sql->select('store_id')->from('multistore_orders')->where('order_id = ' . $order->id);
+        $sql->select('store_id')->from('multistore_order')->where('order_id = ' . $order->id);
         $store_id = Db::getInstance()->getValue($sql);
 
         $store = new Store($store_id);
@@ -234,9 +234,8 @@ class MultiStores extends Module {
             $contact_stores_list[$row['store_id']] = $row['contact'];
         }
 
-        // CHEMIN A VERIFIER 
         $js = [
-            $this->_path . 'views/js/ //CHEMIN.js',
+            $this->_path . 'views/js/back_admin_setup.js',
         ];
 
         $this->context->controller->addJS($js);
